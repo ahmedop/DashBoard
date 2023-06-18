@@ -1,0 +1,220 @@
+/* Start Variables */
+:root {
+    --main-bg-color: #F1F5F9;
+    --main-font-color: #000;
+
+}
+
+/* End Variables */
+
+/* Start Global rules */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* End Global rules */
+
+/* Start Main Componants */
+.page {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+}
+
+/* End Main Componants */
+
+/* Start SideBar section */
+
+
+.page .sidebar {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #ddd;
+    width: 250px;
+}
+
+.page .sidebar h3 {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page .sidebar h3::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.page .sidebar h3::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    outline: 2px solid #FFF;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+}
+
+.page .sidebar ul li {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.page .sidebar ul li:hover {
+    background-color: #f4f4f4;
+}
+
+.page .sidebar ul li.active {
+    background-color: #f4f4f4;
+}
+
+.page .sidebar a span {
+    margin-left: 10px;
+}
+
+@media (max-width:768px) {
+    .page .sidebar {
+        padding: 10px;
+        width: 60px;
+    }
+
+    .page .sidebar a span,
+    .page .sidebar h3::before,
+    .page .sidebar h3::after {
+        display: none;
+    }
+
+    .page .sidebar h3 {
+        margin: 0px;
+        font-size: 12px;
+    }
+
+}
+
+/* End SideBar section */
+/* Start Header */
+.content header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.content header form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid #EEE;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.content header form input {
+    border: none;
+    padding: 5px;
+    width: 140px;
+}
+
+.content header form input:focus {
+    border: none;
+    outline: none;
+    width: 180px;
+}
+
+.content header .image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content header .image img {
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media (max-width:768px) {
+    .content header .image img {
+        width: 30px;
+    }
+}
+
+.fa-bell {
+    position: relative;
+    font-size: 20px;
+}
+
+.fa-bell::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    right: -5px;
+    top: -5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* End Header */
+.content .main {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+}
