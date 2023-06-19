@@ -2,7 +2,12 @@
 :root {
     --main-bg-color: #F1F5F9;
     --main-font-color: #000;
-
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
 }
 
 /* End Variables */
@@ -40,11 +45,38 @@ a {
     width: 100%;
 }
 
+.special-title h1 {
+    width: fit-content;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.special-title h1::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    background-color: #FFF;
+    left: 0px;
+    bottom: 0px;
+}
+
+.special-title h1::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: #000;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
 /* End Main Componants */
 
 /* Start SideBar section */
-
-
 .page .sidebar {
     padding: 20px;
     display: flex;
@@ -214,7 +246,104 @@ a {
 }
 
 /* End Header */
+
+/* Start Main Section */
 .content .main {
     background-color: var(--main-bg-color);
     padding: 20px;
 }
+
+.content .main section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.content .main section .box {
+    background-color: #FFF;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* Start Welcome Box */
+.content .main section .box.welcome .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEEEEE;
+    padding: 20px;
+    position: relative;
+}
+
+.content .main section .box.welcome .head img.profile {
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+    width: 75px;
+    border: 3px solid #FFF;
+    transform: translateY(50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    box-shadow: 0 0 10px #ddd;
+}
+
+.content .main section .box.welcome .body {
+    margin-top: 60px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.content .main section .box.welcome .body div {
+    text-align: center;
+    width: calc(100%/3);
+}
+
+.content .main section .box .button {
+    text-align: end;
+    padding: 20px;
+}
+
+.content .main section .box .button a {
+    padding: 2px 10px;
+    background-color: var(--blue-color);
+    color: #FFF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* End Welcome Box */
+
+/* Start Draft Box */
+.content .main section .box.draft input,
+.content .main section .box.draft textarea {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #EEE;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    resize: none;
+}
+
+/* End Draft Box */
+/* End Main Section */
