@@ -10,3 +10,11 @@
 .tma-20 {
     margin-top: 20px;
 }
+
+.op-5 {
+    opacity: .3;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
