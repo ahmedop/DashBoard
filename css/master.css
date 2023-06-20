@@ -33,11 +33,36 @@ a {
 }
 
 
+/* small screens */
+
+@media (min-width:768px) {
+    .page {
+        width: 750px;
+    }
+
+}
+
+/* medium screens */
+@media (min-width:992px) {
+    .page {
+        width: 970px;
+    }
+
+}
+
+/* large screens */
+@media (min-width:1200px) {
+    .page {
+        width: 1170px;
+    }
+
+}
 
 /* End Global rules */
 
 /* Start Main Componants */
 .page {
+    width: 100%;
     display: flex;
 }
 
