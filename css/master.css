@@ -35,7 +35,7 @@ a {
 
 /* small screens */
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .page {
         width: 750px;
     }
@@ -43,7 +43,7 @@ a {
 }
 
 /* medium screens */
-@media (min-width:992px) {
+@media (max-width:992px) {
     .page {
         width: 970px;
     }
@@ -51,7 +51,7 @@ a {
 }
 
 /* large screens */
-@media (min-width:1200px) {
+@media (max-width:1200px) {
     .page {
         width: 1170px;
     }
@@ -733,11 +733,7 @@ a {
     opacity: .3;
 }
 
-@media (max-width:992px) {
-    .box.project .body .image {
-        display: none;
-    }
-}
+
 
 .box.project .element {
     display: flex;
@@ -797,6 +793,348 @@ a {
     }
 }
 
+@media (max-width:992px) {
+    .box.project .body .image {
+        display: none;
+    }
+
+    .box.project .element+div {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .box.project .element h4 {
+        font-size: 13px;
+        font-weight: normal;
+    }
+}
+
 /* End Project box */
 
+/* Start Reminders box */
+.box.reminders .element {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.box.reminders .element .cycle span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin: 20px 20px 20px 0px;
+    position: relative;
+}
+
+.box.reminders .element.blue .cycle span {
+    background-color: var(--blue-color);
+}
+
+.box.reminders .element.green .cycle span {
+    background-color: var(--green-color);
+}
+
+.box.reminders .element.orange .cycle span {
+    background-color: var(--orange-color);
+}
+
+.box.reminders .element.red .cycle span {
+    background-color: var(--red-color);
+}
+
+.box.reminders .element .cycle span::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    height: 40px;
+    width: 2px;
+}
+
+.box.reminders .element.blue .cycle span::after {
+    background-color: var(--blue-color);
+}
+
+.box.reminders .element.green .cycle span::after {
+    background-color: var(--green-color);
+}
+
+.box.reminders .element.orange .cycle span::after {
+    background-color: var(--orange-color);
+}
+
+.box.reminders .element.red .cycle span::after {
+    background-color: var(--red-color);
+}
+
+/* End Reminders box */
+/* Start Post box */
+.box.post .head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.box.post .head .image img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.box.post .text {
+    padding: 20px 0px;
+    line-height: 1.5;
+}
+
+.box.post .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    color: #888;
+}
+
+.box.post .footer .likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.box.post .footer .comment {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.box.post .footer i {
+    color: var(--blue-alt-color);
+}
+
+@media (max-width:768px) {
+    .box.post .head {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .box.post .text {
+        text-align: center;
+    }
+}
+
+/* End Post box  */
+
+/* Start Social  box */
+.box.social .element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.box.social .element.twitter {
+    background-color: #D2ECFC;
+}
+
+.box.social .element.face {
+    background-color: #D1E4FC;
+}
+
+.box.social .element.tube {
+    background-color: #FFCCCC;
+}
+
+.box.social .element.lin {
+    background-color: #CCE4F0;
+}
+
+.box.social .element .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box.social .element.twitter .logo p {
+    color: #1da1f2;
+}
+
+.box.social .element.face .logo p {
+    color: #1DB1F7;
+}
+
+.box.social .element.tube .logo p {
+    color: red;
+}
+
+.box.social .element.lin .logo p {
+    color: #0077BB;
+}
+
+.box.social .element.twitter i {
+    background-color: #1da1f2;
+}
+
+.box.social .element.face i {
+    background-color: #1877F2;
+}
+
+.box.social .element.tube i {
+    background-color: red;
+}
+
+.box.social .element.lin i {
+    background-color: #0077B5;
+}
+
+.box.social .element i {
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box.social .element i:hover {
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+}
+
+.box.social .element .text p {
+    font-size: 13px;
+    color: #FFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.box.social .element.twitter .text p {
+    background-color: #1da1f2;
+}
+
+.box.social .element.face .text p {
+    background-color: #0077B5;
+}
+
+.box.social .element.tube .text p {
+    background-color: red;
+}
+
+.box.social .element.lin .text p {
+    background-color: #0077B5;
+}
+
+/* End Social box */
+
+/* Start Project Table box */
+.box.table {
+    overflow-x: scroll !important;
+
+}
+
+.box.table table {
+    border-spacing: 0;
+    min-width: 1000px;
+}
+
+.box.table thead {
+    background-color: #EEE;
+}
+
+.box.table th {
+    background-color: #EEE;
+    padding: 20px;
+    text-align: left;
+}
+
+.box.table tr:hover {
+    background-color: #FAF7F7;
+}
+
+.box.table td {
+    padding: 20px;
+    padding-left: 5px;
+    border-bottom: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    text-align: left;
+}
+
+.box.table td:last-child {
+    border-right: 1px solid #EEE;
+}
+
+.box.table td img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.box.table td img:not(:first-child) {
+    margin-left: -20px;
+}
+
+.box.table td.panding span {
+    background-color: var(--orange-color);
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.box.table td.completed span {
+    background-color: var(--green-color);
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.box.table td.in-progress span {
+    background-color: var(--blue-color);
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.box.table td.rejected span {
+    background-color: var(--red-color);
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* End Project Table  box */
 /* End Main Section */
