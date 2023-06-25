@@ -292,7 +292,7 @@ a {
     }
 }
 
-.content .main section .box {
+.content .main .box {
     background-color: #FFF;
     max-width: 100%;
     border-radius: 20px;
@@ -1046,12 +1046,13 @@ a {
 /* Start Project Table box */
 .box.table {
     overflow-x: scroll !important;
+    min-width: 1000px;
 
 }
 
 .box.table table {
     border-spacing: 0;
-    min-width: 1000px;
+    width: 100%;
 }
 
 .box.table thead {
@@ -1162,6 +1163,7 @@ a {
 }
 
 .toggle-switch {
+    display: block;
     background-color: #CCC;
     width: 78px;
     height: 32px;
@@ -1584,3 +1586,187 @@ a {
 
 /* End Backup Manager box */
 /* End Settings page */
+
+/* Start Profile page */
+/* Start Profile box */
+.box.profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #FFF;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.box.profile .left {
+    text-align: center;
+    border-right: 1px solid #DDD;
+    padding: 20px;
+    width: 40%;
+}
+
+.box.profile .left img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.box.profile .left .line {
+    margin: 10px auto;
+    width: 80%;
+    height: 5px;
+    background-color: #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+}
+
+.box.profile .left .line span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80%;
+    height: 100%;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.box.profile .left .stars i {
+    color: var(--orange-color);
+}
+
+.box.profile .right .element {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 20px;
+
+}
+
+.box.profile .right .element:not(:last-of-type) {
+    border-bottom: 1px solid #DDD;
+}
+
+.box.profile .right .element:hover {
+    background-color: #f9f9f9;
+}
+
+.box.profile .right .element div {
+    display: flex;
+    min-width: 350px;
+}
+
+.box.profile .right .element div label {
+    margin-top: -20px;
+}
+
+
+
+@media (max-width:768px) {
+    .box.profile {
+        flex-direction: column;
+    }
+
+    .box.profile .left {
+        padding-right: 0px;
+        padding-bottom: 20px;
+        border-right: none;
+        width: 100%;
+    }
+
+    .box.profile .right {
+        text-align: center;
+    }
+
+    .box.profile .right .element div {
+        justify-content: center;
+    }
+}
+
+/* End Profile box */
+
+.big {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.big .my-skills {
+    flex-grow: 1;
+}
+
+.big .my-skills .line {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.big .my-skills .line:not(:last-of-type) {
+    border-bottom: 1px solid #DDD;
+}
+
+.big .my-skills .line span {
+    background-color: #EEE;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.big .latest-activities {
+    flex-grow: 2;
+}
+
+.big .latest-activities .element {
+    padding: 20px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.big .latest-activities .element .text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.big .latest-activities .element .text .right {
+    text-align: center;
+}
+
+@media (max-width:768px) {
+
+    .big,
+    .big .latest-activities .element,
+    .big .latest-activities .element .text {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .big .latest-activities .element .text .left {
+        text-align: center;
+    }
+
+    .big .my-skills .line {
+        justify-content: center;
+    }
+
+}
+
+/* End Profile page */

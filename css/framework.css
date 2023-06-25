@@ -3,7 +3,7 @@
     color: #888;
 }
 
-.pa-20 {
+.pa-10 {
     padding: 10px;
 }
 
@@ -23,3 +23,14 @@
     font-weight: normal;
 }
 
+.fz-13 {
+    font-size: 13px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.c-gray {
+    color: #888;
+}
