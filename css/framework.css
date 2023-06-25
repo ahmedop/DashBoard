@@ -18,3 +18,8 @@
 .line-through {
     text-decoration: line-through;
 }
+
+.nor-weight {
+    font-weight: normal;
+}
+

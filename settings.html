@@ -62,37 +62,174 @@
                 </div>
                 <!-- <div class="container"></div> -->
                 <section>
-                    <!-- Start welcome box -->
-                    <div class="box welcome">
-                        <div class="head">
+                    <!-- Start Site Control box -->
+                    <div class="box site-control">
+                        <h2>Site Control</h2>
+                        <p class="p-sub">Control The Website If There Is Maintenance</p>
+                        <div class="op-cl">
                             <div class="text">
-                                <h2>Welcome</h2>
-                                <p class="p-sub">Ahmed</p>
+                                <h4 class="nor-weight">Website Control</h4>
+                                <p class="p-sub">Open/Close Website And Type The Reason</p>
                             </div>
-                            <div class="image">
-                                <img src="media/welcome.png" alt="" width="200px">
-                            </div>
-                            <img class="profile" src="media/avatar.png" alt="">
+                            <label>
+                                <input type="checkbox" class="toggle-checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
                         </div>
-                        <div class="body">
+                        <textarea placeholder="Close Message Content"></textarea>
+                    </div>
+                    <!-- End Site Control box -->
+
+                    <!-- Start General Info box -->
+                    <div class="box general-info">
+                        <h2>General Info</h2>
+                        <p class="p-sub">General Information About Your Account</p>
+                        <form action="">
+                            <label class="p-sub" for="f-name">First Name</label>
+                            <input type="text" id="f-name" placeholder="first name">
+                            <label class="p-sub" for="l-name">Last Name</label>
+                            <input type="text" id="l-name" placeholder="last name">
+
+                            <label class="p-sub" for="mail">E-mail</label>
                             <div>
-                                <h4>Ahmed AbdElkader</h4>
-                                <p class="p-sub">Developer</p>
+                                <input type="email" id="mail" placeholder="e-mail" value="Superahmed784@gmail.com"
+                                    disabled>
+                                <a href="#">Change</a>
                             </div>
-                            <div>
-                                <h4>80</h4>
-                                <p class="p-sub">Projects</p>
+                        </form>
+                    </div>
+                    <!-- End General Info box -->
+
+                    <!-- Start Security Info box -->
+                    <div class="box security-info">
+                        <h2>Security Info</h2>
+                        <p class="p-sub">Security Information About Your Account</p>
+                        <div class="element">
+                            <div class="text">
+                                <h4>Password</h4>
+                                <p class="p-sub">Last Change On 25/10/2021</p>
                             </div>
-                            <div>
-                                <h4>$8000</h4>
-                                <p class="p-sub">Earned</p>
-                            </div>
+                            <input type="submit" value="Change">
                         </div>
-                        <div class="button">
-                            <a href="#">Profile</a>
+                        <hr>
+                        <div class="element">
+                            <div class="text">
+                                <h4>Two-Factor Authentication</h4>
+                                <p class="p-sub">Enable/Disable The Feature</p>
+                            </div>
+                            <label>
+                                <input type="checkbox" class="toggle-checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="element">
+                            <div class="text">
+                                <h4>Devices</h4>
+                                <p class="p-sub">Check The Login Devices List</p>
+                            </div>
+                            <input type="submit" value="Devices">
                         </div>
                     </div>
-                    <!-- End welcome box -->
+                    <!-- End Security Info box -->
+
+                    <!-- Start Social Info box -->
+                    <div class="box social-info">
+                        <h2>Social Info</h2>
+                        <p class="p-sub">Social Media Information</p>
+                        <div class="element">
+                            <i class="fa-brands fa-twitter"></i>
+                            <input type="text" placeholder="Twitter UserName">
+                        </div>
+                        <div class="element">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <input type="text" placeholder="Facebook UserName">
+                        </div>
+                        <div class="element">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <input type="text" placeholder="Linkedin UserName">
+                        </div>
+                        <div class="element">
+                            <i class="fa-brands fa-youtube"></i>
+                            <input type="text" placeholder="Youtube UserName">
+                        </div>
+                    </div>
+                    <!-- End Social Info box -->
+
+                    <!-- Start Widgets Control box -->
+                    <div class="box widgets-control">
+                        <h2>Widgets Control</h2>
+                        <p class="p-sub">Show/Hide Widgets</p>
+                        <form action="">
+                            <div>
+                                <input type="checkbox" id="Draft" checked>
+                                <label for="Draft">Quick Draft</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Targets" checked>
+                                <label for="Targets">Yearly Targets</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Statistics" checked>
+                                <label for="Statistics">Tickets Statistics</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="News" checked>
+                                <label for="News">Latest News</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Tasks">
+                                <label for="Tasks">Latest Tasks</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Search" checked>
+                                <label for="Search">Top Search Items</label>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Widgets Control box -->
+
+                    <!-- Start Backup Manager box -->
+                    <div class="box backup-manager">
+                        <h2>Backup Manager</h2>
+                        <p class="p-sub">Control Backup Time And Location</p>
+                        <div class="radio">
+                            <div class="element">
+                                <input type="radio" id="Daily" name="M" checked>
+                                <label for="Daily">Daily</label>
+                            </div>
+                            <div class="element">
+                                <input type="radio" id="Weekly" name="M">
+                                <label for="Weekly">Weekly</label>
+                            </div>
+                            <div class="element">
+                                <input type="radio" id="Monthly" name="M">
+                                <label for="Monthly">Monthly</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="boxs">
+                            <div class="element">
+                                <input type="radio" name="R" id="megaman">
+                                <label for="megaman">
+                                    <i class="fa-solid fa-server fa-2x"></i>
+                                    Megaman</label>
+                            </div>
+                            <div class="element">
+                                <input type="radio" name="R" id="Zero">
+                                <label for="Zero">
+                                    <i class="fa-solid fa-server fa-2x"></i>
+                                    Zero</label>
+                            </div>
+                            <div class="element">
+                                <input type="radio" name="R" id="Sigma" checked>
+                                <label for="Sigma">
+                                    <i class="fa-solid fa-server fa-2x"></i>
+                                    Sigma</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Backup Manager box -->
                 </section>
             </div>
         </div>
