@@ -349,10 +349,8 @@ a {
 }
 
 .content .main section .box .button {
-
     text-align: end;
     padding: 20px;
-
 }
 
 .content .main section .box .button a {
@@ -1869,3 +1867,69 @@ a {
 }
 
 /* End Projects page*/
+
+/* Start Courses page*/
+.box.Course {
+    max-width: 100%;
+}
+
+.box.Course .head {
+    position: relative;
+}
+
+.box.Course .head .photo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.box.Course .body {
+    padding: 20px 20px 30px;
+    border-bottom: 1px solid #DDD;
+}
+
+.box.Course .button {
+    text-align: center !important;
+    padding: 0px !important;
+}
+
+.box.Course .button span {
+    width: fit-content;
+    display: block;
+    background-color: var(--blue-color);
+    padding: 5px 10px;
+    color: #FFF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.box.Course .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.box.Course .footer .views,
+.box.Course .footer .price {
+    display: flex;
+    gap: 5px;
+}
+
+
+/* End Courses page*/
