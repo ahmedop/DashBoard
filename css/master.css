@@ -1770,3 +1770,102 @@ a {
 }
 
 /* End Profile page */
+
+/* Start Projects page*/
+.box.Projects {
+    max-width: 100%;
+}
+
+.box.Projects .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box.Projects .images {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDD;
+}
+
+.box.Projects img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid #FFF;
+}
+
+.box.Projects img:not(:first-child) {
+    margin-left: -20px;
+}
+
+.box.Projects img:hover {
+    z-index: 100;
+    position: relative;
+}
+
+.box.Projects .skills {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #DDD;
+}
+
+.box.Projects .skills span {
+    background-color: #EEE;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.box.Projects .footer {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.box.Projects .footer .line {
+    width: 60%;
+    height: 7px;
+    background-color: #DDD;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.box.Projects .footer .line span {
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media (max-width:768px) {
+
+    .box.Projects .skills,
+    .box.Projects .footer {
+        flex-direction: column;
+    }
+
+    .box.Projects .footer .line {
+        width: 100%;
+    }
+
+    .box.Projects .skills span {
+        width: fit-content;
+    }
+}
+
+/* End Projects page*/
